@@ -1,0 +1,44 @@
+.layout {
+  display: flex;
+  flex-direction: column; /* Stack header and main vertically */
+  min-height: 100vh; /* Ensure the layout fills the viewport height */
+  background-color: #d4edda; /* Light green background */
+}
+
+header {
+  width: 100%; /* Full width header */
+  display: flex;
+  justify-content: center; /* Center navigation links */
+  gap: 20px; /* Add space between links */
+  padding: 10px 0;
+  background-color: #d4edda; /* Same green background */
+}
+
+header ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange links horizontally */
+  gap: 20px; /* Space between links */
+}
+
+header a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text */
+  font-weight: bold; /* Make text bold */
+  padding: 8px 12px; /* Add padding inside links */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+header a:hover {
+  background-color: #c3e6cb; /* Slightly darker green on hover */
+}
+
+main {
+  width: 100%; /* Full width */
+  padding: 20px; /* Add spacing inside the content */
+  background-color: #fff; /* White background */
+  flex: 1; /* Take up the remaining space in the layout */
+  box-sizing: border-box; /* Include padding in height and width calculations */
+}

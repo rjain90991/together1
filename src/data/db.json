@@ -1,0 +1,52 @@
+[
+        {
+            "id": 1,
+            "title": "Aveda Shampoo",
+            "image": "/images/avedaShampoo.png",
+            "lifeTimeEarnings": 5000,
+            "twelveMonthEarnings": 7800,
+            "description": "leading shampoo in the world",
+            "owner": "Smart One",
+            "agreementPeriod": 5
+        },
+        {
+            "id": 2,
+            "title": "Belgium Dark Chocolate",
+            "image": "/images/chocolate.png",
+            "lifeTimeEarnings": 5000,
+            "twelveMonthEarnings": 7800,
+            "description": "leading chocolate in the world",
+            "owner": "Funny One",
+            "agreementPeriod": 10
+        },
+        {
+            "id": 3,
+            "title": "Apple Mac",
+            "image": "/images/appleMac.png",
+            "lifeTimeEarnings": 5000,
+            "twelveMonthEarnings": 7800,
+            "description": "leading laptop in the world",
+            "owner": "Good looking One",
+            "agreementPeriod": 15
+        },
+        {
+            "id": 4,
+            "title": "Bracelet",
+            "image": "/images/bracelet.png",
+            "lifeTimeEarnings": 10000,
+            "twelveMonthEarnings": 2800,
+            "description": "leading bracelet in the world",
+            "owner": "Crazy One",
+            "agreementPeriod": 20
+        },
+        {
+            "id": 5,
+            "title": "Tennis Racquet",
+            "image": "/images/tennis.png",
+            "lifeTimeEarnings": 8000,
+            "twelveMonthEarnings": 19000,
+            "description": "leading tennis racquet in the world",
+            "owner": "Kind One",
+            "agreementPeriod": 25
+     }
+    ]

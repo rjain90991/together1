@@ -1,0 +1,104 @@
+/* Base styling for the form */
+.beautiful-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Form title */
+.beautiful-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs and Textareas */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus States */
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: #0073e6;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0073e6;
+  box-shadow: 0 0 4px rgba(0, 115, 230, 0.5);
+}
+
+/* Textarea Styling */
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.form-button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover and Active States */
+.form-button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 4px 8px rgba(0, 91, 181, 0.3);
+}
+
+.form-button:active {
+  background-color: #003f80;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .beautiful-form {
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .form-button {
+    font-size: 16px;
+  }
+}
