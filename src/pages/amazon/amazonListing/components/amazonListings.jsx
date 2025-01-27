@@ -1,8 +1,16 @@
 import AmazonListing from "./amazonListing";
 import "../css/amazonListing.css";
-import data from "../../../data/db.json"; // Import the JSON file
+import data from "../../../../data/db.json"; // Import the JSON file
+import supabase from "../../../../supabase/supabaseClient";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const AmazonListings = () => {
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const [AmazonListings, setAmazonListings] = useState([]);
   console.log(data);
   // AmazonListing Component
   /*
@@ -59,10 +67,22 @@ const AmazonListings = () => {
     },
   ];
 */
+
   // create a list of amazon listing components
   const amazonListingComponents = [];
+
+  // get all the lists from db
+  const fetchData = async () => {
+    const { data, error } = await supabase.from("AmazonListings").select("*");
+    if (error) {
+      console.log("error fetching ", error);
+    } else {
+      setAmazonListings(data);
+    }
+  };
+
   //for (const listing of data) {
-  data.map((listing) =>
+  AmazonListings.map((listing) =>
     amazonListingComponents.push(
       <AmazonListing
         id={listing.id}

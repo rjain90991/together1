@@ -1,4 +1,4 @@
-import AmazonListings from "./amazonListing/components/amazonListings";
+import AmazonListings from "./amazon/amazonListing/components/amazonListings";
 const Home = () => {
   return (
     <div>
